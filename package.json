@@ -1,0 +1,28 @@
+{
+  "name": "consensys-b3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/run.env nodemon server.js",
+    "db:migrate": "./node_modules/.bin/run.env knex migrate:latest",
+    "db:create": "./node_modules/.bin/run.env createdb balanc3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.1.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "knex": "^0.15.2",
+    "pg": "^7.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5",
+    "run.env": "^1.1.0"
+  }
+}
